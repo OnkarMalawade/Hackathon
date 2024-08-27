@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.left .text,
+.right .text {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.icons .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icons .row i {
+    font-size: 20px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.info .head {
+    font-weight: 600;
+}
+
+.info .sub-title {
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field {
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.field textarea {
+    resize: none;
+    height: 150px;
+}
+
+.button {
+    text-align: right;
+}
+
+.button button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button button:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 100%;
+    }
+}
